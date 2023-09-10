@@ -1,0 +1,26 @@
+cd "C:\Users\79050\Desktop\Institute\4 курс\Инструм средства - Умбетов\hub"
+git clone https://github.com/Roman200212/lr12.git
+cd lr12
+git add examen1.py
+git commit -m "soldatov_1"
+git add examen2.py
+git commit -m "soldatov_2"
+git add examen3.py
+git commit -m "soldatov_3"
+git log
+git checkout -b dva
+git add examen1.py
+git commit -m "soldatov_1_2"
+git add examen2.py
+git commit -m "soldatov_2_2"
+git add examen3.py
+git commit -m "soldatov_3_2"
+git log
+git checkout main
+git merge dva
+git log --oneline
+git reset --hard HEAD~1
+git checkout main
+git check-ignore -v *
+git add -f "*.txt"
+git commit -m "Добавление игнорируемых файлов .txt"
